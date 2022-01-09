@@ -1,0 +1,316 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #44566c;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 1.875rem;
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+h2 {
+    font-size: 1.562rem;
+    margin-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+h3 {
+    color: #343a40;
+    font-size: 1.125rem;
+    margin-bottom: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+ul {
+    margin: 0;
+}
+
+.titleSeparate {
+    margin-top: 4rem;
+    color: var(--lightest-slate);
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.titleSeparate::before,
+.titleSeparate::after {
+    content: '';
+    background-color: #fed304;
+    border-radius: 0.5rem;
+    height: 5px;
+    position: absolute;
+    bottom: -1.1rem;
+    left: 0;
+    width: 3.12rem;
+    z-index: 1;
+}
+
+.titleSeparate::after {
+    background-color: #ff965d;
+    width: 1rem;
+}
+
+.centerAlign {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.text {
+    max-width: 80%;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.box {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.fa {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ant-progress-text {
+    display: inline-block;
+    width: 2em;
+    margin-left: -40px;
+    margin-top: 6px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle;
+    word-break: normal;
+}
+
+.outerPadding {
+    padding: 1.87rem;
+}
+
+@media screen and (max-width: 768px) {
+    .outerPadding {
+        padding: 0.6rem;
+    }
+}
+
+.container {
+    max-width: 1264px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .marginTopTitle {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .borderRadiusSection {
+        border-radius: 3rem;
+    }
+}
+
+.widthFull {
+    width: 100%;
+}
+
+.contactImgBorder {
+    border-radius: 11px;
+}
+
+.react-pdf__Page__canvas {
+    margin: auto;
+}
+
+.react-pdf__Document {
+    background: lightslategray;
+}
+
+.aboutTile {
+    margin: 1rem;
+    max-width: 9rem;
+    max-height: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #4a5568;
+    background-color: #2d3748;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-feature-settings: 'kern';
+    height: 10rem;
+    transform: none;
+}
+
+.aboutTile:hover {
+    transform: scale(1.1) translateZ(0px);
+}
+
+.aboutTile .aboutBlock {
+    height: 54px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mrTp26PX {
+    margin-top: 2rem;
+}
+
+h4 {
+    font-weight: 100;
+    color: #64ffda;
+}
+
+span {
+    margin-left: 3px;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navy);
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 3rem 0 3rem 3rem;
+    font-size: var(--fz-xl);
+    font-family: var(--font-sans);
+    color: var(--slate);
+    line-height: 1.3;
+    padding-top: 0;
+}
+
+@media (max-width: 480px) {
+    .Main {
+        font-size: var(--fz-lg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Main {
+        padding: 2.5rem;
+        padding-top: 0;
+    }
+}
+
+div.habilidades {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-gap: 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+@media (max-width: 1080px) {
+    div.habilidades {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}
+
+.react-github-calendar__calendar {
+    width: auto;
+}
+
+.purple {
+    color: #c770f0;
+    margin-left: 5px;
+    cursor: pointer;
+    transform: none;
+}
+
+.purple:hover {
+    transition: all 200ms;
+    margin-left: 10px;
+    color: #64ffda;
+    transform: scale(1.1) translateZ(0px);
+}
+
+.more-button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1.25rem 1.75rem;
+    margin: 80px auto 0;
+}
+
+.more-button:hover,
+.more-button:focus,
+.more-button:active {
+    background-color: rgba(100, 255, 218, 0.1);
+    outline: none;
+}
+
+.more-button::after {
+    display: none !important;
+}

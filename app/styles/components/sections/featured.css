@@ -1,0 +1,223 @@
+.StyledProjectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.StyledProjectsSection h2 {
+    font-size: clamp(24px, 5vw, 32px);
+}
+
+.StyledProjectsSection .archive-link {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.StyledProjectsSection .archive-link::after {
+    bottom: 0.1em;
+}
+
+.StyledProjectsSection .projects-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.StyledProjectsSection .more-button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1.25rem 1.75rem;
+    margin: 80px auto 0;
+}
+
+.StyledProjectsSection .more-button:hover,
+.StyledProjectsSection .more-button:focus,
+.StyledProjectsSection .more-button:active {
+    background-color: rgba(100, 255, 218, 0.1);
+    outline: none;
+}
+
+.StyledProjectsSection .more-button::after {
+    display: none !important;
+}
+
+.StyledProject {
+    position: relative;
+    cursor: default;
+    transition: var(--transition);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .StyledProject:hover .project-inner,
+    .StyledProject:focus-within .project-inner {
+        transform: translateY(-7px);
+    }
+}
+
+.StyledProject a {
+    position: relative;
+    z-index: 1;
+    color: var(--light-slate);
+}
+
+.StyledProject .project-inner {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: var(--border-radius);
+    background-color: var(--light-navy);
+    transition: var(--transition);
+}
+
+.StyledProject .project-inner:hover,
+.StyledProject .project-inner:focus {
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+
+.StyledProject .project-inner .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.StyledProject .project-inner .project-top .folder {
+    color: var(--green);
+}
+
+.StyledProject .project-inner .project-top .folder svg {
+    width: 40px;
+    height: 40px;
+}
+
+.StyledProject .project-inner .project-top .project-links {
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+    color: var(--light-slate);
+}
+
+.StyledProject .project-inner .project-top .project-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+}
+
+.StyledProject .project-inner .project-top .project-links a.external svg {
+    width: 22px;
+    height: 22px;
+    margin-top: -4px;
+}
+
+.StyledProject .project-inner .project-top .project-links a svg {
+    width: 20px;
+    height: 20px;
+}
+
+.StyledProject .project-inner .project-top .project-title {
+    margin: 0 0 10px;
+    color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+}
+
+.StyledProject .project-inner .project-top .project-title a {
+    position: static;
+}
+
+.StyledProject .project-inner .project-top .project-title a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.StyledProject .project-inner .project-top .project-description {
+    color: var(--light-slate);
+    font-size: 17px;
+}
+
+.StyledProject .project-inner .project-top .project-description a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: var(--transition);
+    color: var(--green);
+}
+
+.StyledProject .project-inner .project-top .project-description a:hover,
+.StyledProject .project-inner .project-top .project-description a:focus,
+.StyledProject .project-inner .project-top .project-description a:active {
+    color: var(--green);
+    outline: 0;
+}
+
+.StyledProject .project-inner .project-top .project-description a:hover::after,
+.StyledProject .project-inner .project-top .project-description a:focus::after,
+.StyledProject .project-inner .project-top .project-description a:active::after {
+    width: 100%;
+}
+
+.StyledProject .project-inner .project-top .project-description a:hover>*,
+.StyledProject .project-inner .project-top .project-description a:focus>*,
+.StyledProject .project-inner .project-top .project-description a:active>* {
+    color: var(--green) !important;
+    transition: var(--transition);
+}
+
+.StyledProject .project-inner .project-top .project-description a :after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    position: relative;
+    bottom: 0.37em;
+    background-color: var(--green);
+    transition: var(--transition);
+    opacity: 0.5;
+}
+
+.StyledProject .project-inner .project-tech-list {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+}
+
+.StyledProject .project-inner .project-tech-list li {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.StyledProject .project-inner .project-tech-list li:not {
+    margin-right: 15px;
+}
